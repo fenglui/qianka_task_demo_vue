@@ -11,7 +11,7 @@
       <div class="aui-card-list-content">
         <ul class="aui-list aui-media-list">
           <li class="aui-list-item aui-list-item-middle" v-for="task in tasks">
-            <div class="aui-media-list-item-inner" v-on:click="_gotoTask(task.id,task.app_name)">
+            <div class="aui-media-list-item-inner" v-on:touchstart="_gotoTask(task.id,task.app_name)">
               <div class="aui-list-item-media" style="width: 3rem;">
                 <img v-bind:src="task.thumb" class="aui-img-round">
               </div>
